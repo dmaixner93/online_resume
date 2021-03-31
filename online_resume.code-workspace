@@ -1,0 +1,18 @@
+{
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "beautify.language": {
+      "html": ["html"],
+    },
+  },
+  "launch": {
+    "configurations": [{
+      "pathMappings": [{
+        "localRoot": "${workspaceFolder}",
+        "remoteRoot": "/app",
+      }],
+    }, ]
+  }
+}
