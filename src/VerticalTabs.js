@@ -5,6 +5,7 @@ import TabPanel from './TabPanel';
 import Jobs from './assets/Jobs';
 import { v4 as uuidv4 } from 'uuid';
 
+
 function a11yProps(index) {
   return {
     id: `vertical-tab-${index}`,
@@ -23,9 +24,12 @@ export default function VerticalTabs() {
     tabs.labels.push(
       <Tab 
         className="focus:outline-none"
+        disableFocusRipple={true}
+        disableRipple={true}
         label={job.company}
         key={uuidv4()}
         value={job.id}
+        {...a11yProps(job.id)}
       />)
     tabs.panels.push(
       <TabPanel
@@ -37,7 +41,7 @@ export default function VerticalTabs() {
   })
 
   return (
-    <div className="bg-transparent flew-grow flex h-72 dev-border">
+    <div className="bg-transparent flew-grow flex h-72">
       <Tabs
         orientation="vertical"
         variant="standard"

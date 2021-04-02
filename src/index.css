@@ -7,6 +7,26 @@
   color: #D1D5DB;
 }
 
+li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border-radius: 50px;
+  border: 1.5px solid #7DD3FC;
+}
+
+.MuiTab-root>.MuiTab-wrapper {
+  align-items: start;
+}
+
+[data-glow] {
+  box-shadow: -6px -6px 26px 0 rgba(125, 211, 252, 0.48),
+    6px 6px 16px 0 rgba(125, 211, 252, 0.26);
+}
+
 .dev-border {
   border: 1px solid;
   border-color: rgba(229, 231, 235, .1);
