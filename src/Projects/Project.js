@@ -1,11 +1,9 @@
-import ImageColumn from './ImageColumn';
-import TextColumn from './TextColumn';
-
-const Project = () => {
+const Project = props => {
+  const { image, text } = props;
   return (
     <div className="relative dev-border h-96 w-full">
-      <ImageColumn />
-      <TextColumn />
+      {image}
+      {text}
     </div>
   )
 }

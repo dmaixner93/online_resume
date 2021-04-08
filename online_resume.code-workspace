@@ -3,9 +3,7 @@
     "path": "."
   }],
   "settings": {
-    "beautify.language": {
-      "html": ["html"],
-    },
+    "prettier.semi": true,
   },
   "launch": {
     "configurations": [{
@@ -14,5 +12,5 @@
         "remoteRoot": "/app",
       }],
     }, ]
-  }
+  },
 }

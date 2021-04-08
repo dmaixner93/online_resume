@@ -2,7 +2,7 @@ import React from 'react';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import TabPanel from './TabPanel';
-import Jobs from './assets/Jobs';
+import Jobs from './assets/jobs';
 import { v4 as uuidv4 } from 'uuid';
 
 
