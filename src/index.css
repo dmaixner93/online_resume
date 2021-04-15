@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-::selection {
-  background-color: #374151;
-  color: #D1D5DB;
+@layer utilities {
+  @variants dark {
+    .glow-blue {
+      box-shadow: -6px -6px 22px 0 rgba(125, 211, 252, 0.35),
+      6px 6px 16px 0 rgba(125, 211, 252, 0.30);
+    }
+  }
 }
 
 li::before {
@@ -15,16 +19,11 @@ li::before {
   height: 10px;
   margin-right: 6px;
   border-radius: 50px;
-  border: 1.5px solid #7DD3FC;
+  border: 1.5px solid #38BDF8;
 }
 
 .MuiTab-root>.MuiTab-wrapper {
   align-items: start;
-}
-
-[data-glow] {
-  box-shadow: -6px -6px 22px 0 rgba(125, 211, 252, 0.35),
-    6px 6px 16px 0 rgba(125, 211, 252, 0.30);
 }
 
 .dev-border {

@@ -5,11 +5,13 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createMuiTheme } from '@material-ui/core/styles';
+// import { themeHelper } from './utils/themeHelpers';
 
+// const html = document.documentElement;
 const theme = createMuiTheme({
   palette: {
     secondary: {
-      main: '#7DD3FC',
+      main: '#38BDF8',
     },
   },
 });

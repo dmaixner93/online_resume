@@ -1,4 +1,3 @@
-import { useRef, useContext } from 'react';
 import './App.css';
 import Header from './Header';
 import Section from './Section';
@@ -12,7 +11,7 @@ import { ThemeProvider } from './contexts/theme.context';
 function App() {
   return (
     <ThemeProvider>
-      <div className="App bg-gray-900 overflow-x-hidden">
+      <div className="App overflow-x-hidden">
         <div className="relative w-full px-24">
           <Header />
           <Section>

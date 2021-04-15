@@ -1,14 +1,17 @@
-import { createContext } from 'react';
-import useToggle from '../hooks/useToggle';
+import { createContext } from "react";
+import useLocalStorageReducer from "../hooks/useLocalStorageReducer";
+import themeReducer from '../reducers/theme.reducer';
+// import { useToggle } from "../hooks/useToggle";
 
 export const ThemeContext = createContext();
 
-export const ThemeProvider = props => {
-  const [ darkMode, setDarkMode ] = useToggle(true);
-  
+const defaultVal = window.localStorage.getItem("theme") || "light";
+
+export const ThemeProvider = (props) => {
+  const [theme, dispatch] = useLocalStorageReducer("theme", defaultVal, themeReducer);
   return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
-      {props.children}
+    <ThemeContext.Provider value={{ theme, dispatch }}>
+        {props.children}
     </ThemeContext.Provider>
-  )
-}
+  );
+};
