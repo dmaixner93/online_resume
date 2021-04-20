@@ -1,26 +1,26 @@
 import Project from './Project';
-import ImageColumn from './ImageColumn';
-import TextColumn from './TextColumn';
 import projects from '../assets/projects';
 import { v4 as uuidv4 } from 'uuid';
-// import LightsOutImg from '../static/media/lights_out.png';
+import Spacer from '../Spacer';
 
 const Projects = () => {
   const allProjects = projects.map(project => {
+    const { id, title, name, description } = project;
+    const orientation = (project.id % 2) === 0 ? 'left' : 'right';
     return (
-    <Project
-      key={uuidv4()}
-      image={<ImageColumn name={'lights_out'} />}
-      text={<TextColumn
-          name={project.name}
-          description={project.description}
-        />}
-    />    
+      <div key={uuidv4()} className="project-wrapper">
+        <Project
+          id={id}
+          orientation={orientation}
+          title={title} 
+          name={name}
+          description={description}
+        />
+        <Spacer height={20} />
+      </div>
   )})
   return (
-    <div>
-      {allProjects}
-    </div>
+    allProjects
   )
 }
 

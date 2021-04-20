@@ -5,13 +5,11 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createMuiTheme } from '@material-ui/core/styles';
-// import { themeHelper } from './utils/themeHelpers';
 
-// const html = document.documentElement;
 const theme = createMuiTheme({
   palette: {
     secondary: {
-      main: '#38BDF8',
+      main: '#0EA5E9',
     },
   },
 });
@@ -20,7 +18,7 @@ ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <App />
-      </ThemeProvider>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

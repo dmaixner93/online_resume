@@ -1,5 +1,5 @@
 const colors = require('tailwindcss/colors');
-const plugin = require('tailwindcss/plugin');
+// const plugin = require('tailwindcss/plugin');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -8,13 +8,12 @@ module.exports = {
   theme: {
     colors: {
       gray: colors.coolGray,
-      rose: colors.rose,
-      yellow: colors.amber,
       blue: colors.lightBlue,
     },
     extend: {
       colors: {
-        'true-gray': colors.trueGray
+        'true-gray': colors.trueGray,
+        white: colors.white,
       },
       container: {
         center: true,

@@ -22,14 +22,13 @@ export default function VerticalTabs() {
   Jobs.forEach((job) => {
     tabs.labels.push(
       <Tab
-        className="text-gray-600 dark:text-gray-300 focus:outline-none"
+        className="hover:bg-gray- focus:outline-none"
         disableFocusRipple={true}
         disableRipple={true}
         label={job.company}
         key={uuidv4()}
         value={job.id}
         {...a11yProps(job.id)}
-        // classes={{  }}
       />
     );
     tabs.panels.push(
@@ -38,13 +37,13 @@ export default function VerticalTabs() {
         description={job.description}
         value={value}
         index={job.id}
-        className="max-w-2xl text-gray-600 dark:text-gray-300"
+        className="max-w-2xl"
       />
     );
   });
 
   return (
-    <div className="bg-transparent text-gray-600 dark:text-gray-300 flew-grow flex h-72">
+    <div className="bg-transparent flew-grow flex h-72 text-gray-600 dark:text-gray-300">
       <Tabs
         orientation="vertical"
         variant="standard"
@@ -53,7 +52,7 @@ export default function VerticalTabs() {
         value={value}
         onChange={handleChange}
         aria-label="Job experience tabs"
-        className="border-r bg-gray-50 dark:bg-gray-900 dark:border-gray-100 border-opacity-10 dark:border-opacity-10">
+        className="border-r bg-transparent dark:border-gray-100 border-opacity-10 dark:border-opacity-10">
         {tabs.labels}
       </Tabs>
       {tabs.panels}
