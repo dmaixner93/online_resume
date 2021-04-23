@@ -17,7 +17,7 @@ const AboutMe = () => {
             <li>Docker</li>
             <li>Django</li>
             <li>Adobe Suite</li>
-            <li>Java (Mild Experience)</li>
+            <li>Git</li>
           </ul>          
         </div>
       </div>

@@ -7,8 +7,13 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     colors: {
+      transparent: 'transparent',
+      current: 'currentColor',      
       gray: colors.coolGray,
       blue: colors.lightBlue,
+      green: colors.emerald,
+      red: colors.rose,
+      indigo: colors.indigo,
     },
     extend: {
       colors: {
@@ -30,7 +35,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      filter: ['group-hover'],
+    }
   },
   plugins: [],
 }

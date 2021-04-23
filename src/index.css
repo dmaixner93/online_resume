@@ -2,12 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
-  @variants dark {
-    .glow-blue {
-      box-shadow: -6px -6px 22px 0 rgba(125, 211, 252, 0.35),
-      6px 6px 16px 0 rgba(125, 211, 252, 0.30);
-    }
+@layer base {
+  p {
+    @apply: text-red-500;
   }
 }
 
@@ -17,13 +14,18 @@ li::before {
   display: inline-block;
   width: 10px;
   height: 10px;
-  margin-right: 6px;
+  margin-right: 8px;
   border-radius: 50px;
   border: 1.5px solid #0EA5E9;
 }
 
 .MuiTab-root>.MuiTab-wrapper {
   align-items: start;
+}
+
+div.MuiBox-root {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .dev-border {

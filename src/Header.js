@@ -1,8 +1,10 @@
+import React, { createRef } from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
 import Logo from './assets/Logo';
 import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
+  // const tooltipRef = createRef();
   return (
     <header className="fixed left-0 h-20 w-full">
       <div className="relative grid grid-cols-6 items-center w-full h-full">

@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './Header';
 import Section from './Section';
-import VerticalTabs from './VerticalTabs';
+import VerticalTabs from './Tabs/VerticalTabs';
 import Introduction from './Introduction';
 import SectionHeader from './SectionHeader';
 import AboutMe from './AboutMe';
