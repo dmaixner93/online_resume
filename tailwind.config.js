@@ -16,6 +16,9 @@ module.exports = {
       indigo: colors.indigo,
     },
     extend: {
+      minHeight: {
+        '72': '18rem',
+      },
       colors: {
         'true-gray': colors.trueGray,
         white: colors.white,

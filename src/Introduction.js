@@ -1,5 +1,5 @@
 import Button from './Button';
-import Spacer from './Spacer';
+import Spacer from './utils/Spacer';
 
 const Introduction = () => {
   return (

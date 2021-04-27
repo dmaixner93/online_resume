@@ -1,9 +1,8 @@
-import './App.css';
 import Header from './Header';
-import Section from './Section';
+import Section from './utils/Section';
 import VerticalTabs from './Tabs/VerticalTabs';
 import Introduction from './Introduction';
-import SectionHeader from './SectionHeader';
+import SectionHeader from './utils/SectionHeader';
 import AboutMe from './AboutMe';
 import Projects from './Projects/Projects';
 import { ThemeProvider } from './contexts/theme.context';
@@ -11,7 +10,7 @@ import { ThemeProvider } from './contexts/theme.context';
 function App() {
   return (
     <ThemeProvider>
-      <div className="App overflow-x-hidden">
+      <div className="relative overflow-x-hidden">
         <div className="relative w-full px-24">
           <Header />
           <Section>
@@ -26,7 +25,7 @@ function App() {
             <VerticalTabs />
           </Section>
           <Section>
-            <SectionHeader sectionNum={"04"} title={"Cool Things I built"} />
+            <SectionHeader sectionNum={"04"} title={"Samples of My Work"} />
             <Projects />
           </Section>
         </div>

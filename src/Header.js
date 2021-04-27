@@ -1,10 +1,9 @@
 import React, { createRef } from 'react';
-import Tooltip from '@material-ui/core/Tooltip';
 import Logo from './assets/Logo';
 import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
-  // const tooltipRef = createRef();
+  const tooltipRef = createRef();
   return (
     <header className="fixed left-0 h-20 w-full">
       <div className="relative grid grid-cols-6 items-center w-full h-full">
@@ -12,12 +11,7 @@ const Header = () => {
           <Logo />
         </div>
         <div className="col-span-1 pr-8 col-start-6 h-full flex justify-end items-center">
-          <Tooltip
-            placement="bottom-start"
-            aria-label="Toggle light/dark theme"
-            title="Toggle light/dark theme">
-            <ThemeToggle />
-          </Tooltip>
+          <ThemeToggle ref={tooltipRef} />
         </div>
       </div>
     </header>

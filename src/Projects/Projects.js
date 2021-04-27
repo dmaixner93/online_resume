@@ -1,7 +1,7 @@
 import Project from './Project';
 import projects from '../static/projects';
 import { v4 as uuidv4 } from 'uuid';
-import Spacer from '../Spacer';
+import Spacer from '../utils/Spacer';
 
 const Projects = () => {
   const allProjects = projects.map(project => {

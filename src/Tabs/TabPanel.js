@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProjectTitle from './ProjectTitle';
-import Spacer from '../Spacer';
+import Spacer from '../utils/Spacer';
 import TabPanelList from './TabPanelList';
 
 const TabPanel = props => {

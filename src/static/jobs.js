@@ -32,8 +32,14 @@ const Jobs = [
     jobTitle: "Digital Media Team",
     dates: "March 2020 - Present",
     body: {
-      description: "Throughout its history, the company has been noted for its continued participation in racing, especially in Formula One, where it is the oldest and most successful racing team, holding the most constructors championships (16) and having produced the highest number of drivers' championship wins (15)",
-      responsibilities: [],
+      description: "",
+      responsibilities: [
+        "Converted Photoshop designs to functional websites using Wix, Squarespace, WordPress, and ClickFunnels",
+        "Improve and/or implement clients’ SEO and website accessibility",
+        "Designed and created Facebook Ad campaigns including implementing, targeting, and creating campaign landing pages",
+        "Developed media with Adobe Photoshop, Illustrator, and InDesign to support marketing team campaigns to increase employee and client engagement",
+        "Created storytelling and promotional videos for clients and company, including filming equipment and editing footage to createt comprehensive media package",
+      ],
   },
   },
   {
@@ -43,7 +49,11 @@ const Jobs = [
     dates: "March 2020 - Present",
     body: {
       description: "Ferrari cars are built at the 165,000 square-meter (16.5-hectare) Maranello factory.[13] In 2014 Ferrari was rated the world's most powerful brand by Brand Finance.[14",
-      responsibilities: [],
+      responsibilities: [
+        "Developed landing pages and sales funnels for new offers.",
+        "Recruited and maintained large number of affiliates, serving as the internal CRM.",
+        "Brainstormed new marketing efforts to enhance and maintain a positive experience for existing clients.",
+      ],
     }
   },      
 ]

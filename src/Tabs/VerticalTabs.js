@@ -43,7 +43,7 @@ export default function VerticalTabs() {
   });
 
   return (
-    <div className="bg-transparent flew-grow flex h-72 text-gray-600 dark:text-gray-300">
+    <div className="bg-transparent flew-grow flex min-h-72 h-auto text-gray-600 dark:text-gray-300">
       <Tabs
         orientation="vertical"
         variant="standard"
