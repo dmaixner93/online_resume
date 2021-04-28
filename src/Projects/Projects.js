@@ -2,6 +2,7 @@ import Project from './Project';
 import projects from '../static/projects';
 import { v4 as uuidv4 } from 'uuid';
 import Spacer from '../utils/Spacer';
+import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const allProjects = projects.map(project => {
@@ -9,13 +10,15 @@ const Projects = () => {
     const orientation = (project.id % 2) === 0 ? 'left' : 'right';
     return (
       <div key={uuidv4()} className="project-wrapper">
-        <Project
-          id={id}
-          orientation={orientation}
-          title={title} 
-          name={name}
-          description={description}
-        />
+        <Link to="/waylit">
+          <Project
+            id={id}
+            orientation={orientation}
+            title={title}
+            name={name}
+            description={description}
+          />
+        </Link>
         <Spacer height={20} />
       </div>
   )})

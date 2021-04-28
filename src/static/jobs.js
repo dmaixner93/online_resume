@@ -48,7 +48,7 @@ const Jobs = [
     jobTitle: "Affiliate Marketing Manager",
     dates: "March 2020 - Present",
     body: {
-      description: "Ferrari cars are built at the 165,000 square-meter (16.5-hectare) Maranello factory.[13] In 2014 Ferrari was rated the world's most powerful brand by Brand Finance.[14",
+      description: "",
       responsibilities: [
         "Developed landing pages and sales funnels for new offers.",
         "Recruited and maintained large number of affiliates, serving as the internal CRM.",

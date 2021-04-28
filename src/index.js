@@ -5,6 +5,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createMuiTheme } from '@material-ui/core/styles';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const theme = createMuiTheme({
   palette: {
@@ -16,9 +17,11 @@ const theme = createMuiTheme({
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <Router>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );
