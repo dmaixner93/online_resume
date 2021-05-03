@@ -6,6 +6,14 @@
   @apply inline-block w-2.5 h-2.5 mr-2 rounded-full border border-blue-500;
 }
 
+.MuiContainer-root {
+  @apply px-24 !important;
+}
+
+.dev-border {
+  @apply border border-gray-500;
+}
+
 .MuiTab-root>.MuiTab-wrapper {
   align-items: start;
 }
@@ -13,9 +21,4 @@
 div.MuiBox-root {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.dev-border {
-  border: 1px solid;
-  border-color: rgba(229, 231, 235, .1);
 }
