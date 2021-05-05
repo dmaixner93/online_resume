@@ -1,7 +1,7 @@
 import Spacer from "./Spacer";
 
 const SectionHeader = (props) => {
-  const { sectionNum, title } = props;
+  const { sectionNum, title, disableDivider } = props;
   return (
     <div className="h-auto w-full">
       <Spacer height={8} />
@@ -18,7 +18,9 @@ const SectionHeader = (props) => {
             {title}
           </h3>
         )}
-        <div className="ml-6 h-px w-72 bg-gray-600 dark:bg-gray-400 bg-opacity-25"></div>
+        { disableDivider ? (null) :
+          (<div className="ml-6 h-px w-72 bg-gray-600 dark:bg-gray-400 bg-opacity-25"></div>)
+        }
       </div>
       <Spacer height={8} />
     </div>

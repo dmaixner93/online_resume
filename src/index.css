@@ -10,6 +10,10 @@
   @apply px-24 !important;
 }
 
+.MuiTableCell-root {
+  @apply px-0 !important;
+}
+
 .dev-border {
   @apply border border-gray-500;
 }
