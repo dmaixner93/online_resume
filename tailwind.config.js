@@ -14,6 +14,7 @@ module.exports = {
       green: colors.emerald,
       red: colors.rose,
       indigo: colors.indigo,
+      yellow: colors.amber,
     },
     extend: {
       minHeight: {
