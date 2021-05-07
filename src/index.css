@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@variants focus {
+  .input-focus {
+    @apply outline-none ring ring-indigo-500 ring-opacity-20 border border-indigo-500;
+  }
+}
+
 .list-marker {
   @apply inline-block w-2.5 h-2.5 mr-2 rounded-full border border-blue-500;
 }

@@ -8,8 +8,13 @@ import SectionHeader from '../utils/SectionHeader';
 import Spacer from '../utils/Spacer';
 import InputField from './InputField';
 import SelectInput from './SelectInput';
+// import Select from 'react-select';
+// import { selectInputData } from '../static/waylit/sampleData';
+
+
 
 const Waylit = () => {
+
   return (
     <Container fixed>
       <Spacer height={8} />

@@ -9,13 +9,13 @@ const startCaseData = [
     id: 2,
     candidate: "Lando Norris",
     jobTitle: "Driver",
-    type: "OPT",
+    type: "J-1",
   },
   {
     id: 3,
     candidate: "Toto Wolf",
     jobTitle: "CEO",
-    type: "CPT",
+    type: "F-1",
   },
 ];
 
@@ -46,4 +46,25 @@ const taskTableData = [
   },  
 ];
 
-export { startCaseData, taskTableData, };
+const selectInputData = [
+  {
+    id: 0,
+    img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Tom Cook",
+    selected: true,
+  },
+  {
+    id: 1,
+    img: "https://images.unsplash.com/photo-1568409938619-12e139227838?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Caroline Schultz",
+    selected: false,
+  },
+  {
+    id: 2,
+    img: "https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+    name: "Wade Cooper",
+    selected: false,
+  }
+]
+
+export { startCaseData, taskTableData, selectInputData, };
