@@ -1,6 +1,8 @@
 import Main from './Main';
 import Waylit from './waylit/Waylit';
 import Header from './Header';
+import Logo from './assets/Logo';
+import SectionHeader from './utils/SectionHeader';
 import { ThemeProvider } from './contexts/theme.context';
 import {
   Switch,
@@ -10,13 +12,23 @@ import {
 function App() {
   return (
     <ThemeProvider>
-      <Header />
         <Switch>
           <Route exact path="/">
-            <Main />
+            <Main
+              header={<Header left={<Logo />} />}
+            />
           </Route>
           <Route exact path="/waylit">
-            <Waylit />
+            <Waylit
+              header={
+                <Header
+                  left={
+                    <SectionHeader
+                      title={'Waylit'}
+                      disableDivider={true}
+                    />}
+                />}
+            />
           </Route>
         </Switch>
     </ThemeProvider>

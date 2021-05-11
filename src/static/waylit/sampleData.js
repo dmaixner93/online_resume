@@ -65,6 +65,17 @@ const selectInputData = [
     name: "Wade Cooper",
     selected: false,
   }
+];
+
+const avatarGroupData = [
+  {
+    id: 0,
+    initials: "KP",
+    colors: {
+      primary: "",
+      secondary: "",
+    }
+  }
 ]
 
-export { startCaseData, taskTableData, selectInputData, };
+export { startCaseData, taskTableData, selectInputData, avatarGroupData };

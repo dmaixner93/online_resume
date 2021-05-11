@@ -12,7 +12,6 @@ module.exports = {
       gray: colors.coolGray,
       blue: colors.lightBlue,
       green: colors.emerald,
-      red: colors.rose,
       indigo: colors.indigo,
       yellow: colors.amber,
     },
@@ -23,6 +22,7 @@ module.exports = {
       colors: {
         'true-gray': colors.trueGray,
         white: colors.white,
+        purple: colors.purple
       },
       container: {
         center: true,
@@ -41,6 +41,7 @@ module.exports = {
   variants: {
     extend: {
       filter: ['group-hover'],
+      translate: ['group-hover'],
     }
   },
   plugins: [],

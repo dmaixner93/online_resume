@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@variants focus {
-  .input-focus {
-    @apply outline-none ring ring-indigo-500 ring-opacity-20 border border-indigo-500;
+@layer utilities {
+  @variants focus {
+    .input-focus {
+      @apply outline-none ring ring-indigo-500 ring-opacity-20 border border-indigo-500;
+    }
+  }
+  @variants dark, focus {
+    .input-focus {
+      @apply outline-none ring ring-indigo-300 ring-opacity-50 border border-indigo-400;
+    }
   }
 }
 

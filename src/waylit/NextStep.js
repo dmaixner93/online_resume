@@ -2,7 +2,7 @@ const NextStep = () => {
   const src = require('../static/media/office_supplies.png');
   return (
     <div className="bg-white shadow sm:rounded-lg">
-      <div className="py-5 sm:py-6 px-10">
+      <div className="py-5 sm:py-8 px-10">
         <div className="sm:flex sm:items-center">
           <div className="mt-5 sm:mt-0 sm:mr-6 sm:flex-shrink-0 sm:flex sm:items-center">
             <span className="inline-flex rounded-md">
