@@ -49,11 +49,11 @@ const Waylit = (props) => {
             <Grid item sm={10}>
               <TaskTable />
             </Grid>
+            <Grid item sm={12}>
+              <NavBar />
+            </Grid>
             <Grid item sm={5}>
               <StartCase />
-            </Grid>
-            <Grid item sm={7}>
-              <NavBar />
             </Grid>
           </Grid>
       </Container>
