@@ -40,7 +40,7 @@ const Row = memo(({ candidate, jobTitle, type }) => {
 const StartCase = (props) => {
   return (
     <div
-      className="relative inline-block py-6 align-bottom bg-white rounded-lg text-left overflow-hidden shadow-md sm:align-middle sm:w-full"
+      className="relative inline-block py-6 align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-hidden shadow-md sm:align-middle sm:w-full"
       role="dialog">
       <div className="absolute top-4 right-6 h-6 w-full flex items-center justify-end">
         <div className="h-full w-auto cursor-pointer opacity-60 hover:opacity-100">
@@ -57,8 +57,8 @@ const StartCase = (props) => {
           </span>
         </div>
       </div>
-      <div className="relative min-w-full bg-white mt-10 h-72 overflow-y-scroll">
-        <Table className="border-t border-gray-200">
+      <div className="relative min-w-full bg-white dark:bg-gray-800 mt-10 h-72 overflow-y-scroll">
+        <Table className="border-t border-gray-200 dark:border-gray-600">
           <TableBody>
             {startCaseData.map((row) => (
               <Row key={uuidv4()} {...row} />

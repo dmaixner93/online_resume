@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  div, p, span, h3 {
+    @apply text-gray-900 dark:text-gray-100;
+  }
+}
+
 @layer utilities {
   @variants focus {
     .input-focus {
@@ -16,8 +22,12 @@
 }
 
 .list-marker {
-  @apply inline-block w-2.5 h-2.5 mr-2 rounded-full border border-blue-500;
+  @apply inline-block w-2.5 h-2.5 mr-2 rounded-full border border-blue-500 dark:border-blue-300;
 }
+
+/**
+ Material-UI Overrides
+*/
 
 .MuiContainer-root {
   @apply px-24 !important;
@@ -25,6 +35,10 @@
 
 .MuiTableCell-root {
   @apply px-0 !important;
+}
+
+.MuiTableCell-root {
+  @apply dark:border-gray-700
 }
 
 .dev-border {

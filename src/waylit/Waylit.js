@@ -7,12 +7,14 @@ import TaskTable from './TasksTable';
 import Spacer from '../utils/Spacer';
 import InputField from './InputField';
 import SelectInput from './SelectInput';
-// import DetailCard from './DetailCard';
+import DetailCard from './DetailCard';
 import NavBar from './NavBar';
 import Button from './Button';
 import AvatarGroup from './AvatarGroup';
 import ToggleInput from './ToggleInput';
 import CheckWithCircle from '../static/waylit/svg/CheckWithCircle';
+import FooterNote from '../utils/FooterNote';
+import footerText from '../static/waylit/footerText';
 
 
 const Waylit = (props) => {
@@ -55,8 +57,13 @@ const Waylit = (props) => {
             <Grid item sm={5}>
               <StartCase />
             </Grid>
+            <Grid item sm={3}>
+              <DetailCard />
+            </Grid>
           </Grid>
+          <FooterNote text={footerText} />
       </Container>
+
     </React.Fragment>
   )
 }

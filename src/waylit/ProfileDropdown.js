@@ -5,21 +5,21 @@ const Dropdown = ({ visibility }) => {
    * add show/hide text during scale transform 
    * */
   return (
-    <div className="py-1 rounded-md bg-white ring-1 ring-gray-200">
-      <div className="cursor-pointer px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+    <div className="rounded-md bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
+      <div className="cursor-pointer px-4 py-2 text-sm leading-5 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
         Your Profile
       </div>
-      <div className="cursor-pointer px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+      <div className="cursor-pointer px-4 py-2 text-sm leading-5 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
         Upload files
       </div>
-      <div className="cursor-pointer px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+      <div className="cursor-pointer px-4 py-2 text-sm leading-5 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
         Company Details
       </div>
-      <div className="cursor-pointer px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+      <div className="cursor-pointer px-4 py-2 text-sm leading-5 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
         Settings
       </div>
-      <div className="h-px w-full bg-gray-200 bg-opacity-75"></div>
-      <div className="w-full cursor-pointer px-4 py-2 text-left text-sm leading-5 text-gray-700 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
+      <div className="h-px w-full bg-gray-200 dark:bg-gray-700 bg-opacity-75"></div>
+      <div className="w-full cursor-pointer px-4 py-2 text-left text-sm leading-5 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
         Sign out
       </div>
     </div>
@@ -31,8 +31,8 @@ const ProfileDropdown = () => {
   return (
     <div className="ml-auto relative">
       <div>
-        <button onClick={() => setVisibility()} className="flex items-center text-white text-sm border-2 border-transparent rounded-full px-3 focus:outline-none focus:border-gray-300 hover:bg-white hover:bg-opacity-10">
-          <span className="leading-5 text-sm w-full p-2">
+        <button onClick={() => setVisibility()} className="flex items-center text-white text-sm border-2 border-transparent rounded-full px-3 focus:outline-none focus:border-gray-300 dark:focus:border-gray-600 hover:bg-white hover:bg-opacity-10">
+          <span className="text-white text-sm w-full p-2">
             Aubrey Graham
           </span>
           <svg className="transform duration-300 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 20 20">

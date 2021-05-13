@@ -16,7 +16,7 @@ const icons = {
 };
 
 const NavBarTabs = () => {
-  const [ active, setActive ] = useState([false, false, false, false,]);
+  const [ active, setActive ] = useState([false, true, false, false,]);
 
   const toggleActive = idx => {
     const tabs = active.map((tab, i) => idx === i ? active[i] = true : active[i] = false);

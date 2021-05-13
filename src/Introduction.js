@@ -4,7 +4,7 @@ import Spacer from './utils/Spacer';
 const Introduction = () => {
   return (
     <div className="w-full text-gray-700 dark:text-gray-300 space-y-4 text-left">
-      <h3 className="text-base tracking-wider font-mono text-blue-500 pl-1">Hi, my name is</h3>
+      <h3 className="text-base tracking-wider font-mono text-blue-500 dark:text-blue-300 pl-1">Hi, my name is</h3>
       <h1 className="text-4xl text-gray-600 dark:text-gray-100 font-semibold">Daniel Maixner</h1>
       <p className="text-5xl">This is some bigger text about things</p>
       <p className="leading-6 max-w-xl">
