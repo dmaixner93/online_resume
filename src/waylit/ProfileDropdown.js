@@ -5,7 +5,7 @@ const Dropdown = ({ visibility }) => {
    * add show/hide text during scale transform 
    * */
   return (
-    <div className="rounded-md bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700">
+    <div className="rounded-md bg-white dark:bg-gray-800 ring-1 ring-gray-200 dark:ring-gray-700 overflow-hidden">
       <div className="cursor-pointer px-4 py-2 text-sm leading-5 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out">
         Your Profile
       </div>
@@ -40,7 +40,7 @@ const ProfileDropdown = () => {
           </svg>
         </button>
       </div>
-      <div className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-50 transition duration-75 ease-in ${visibility ? 'opacity-100' : 'opacity-0'}`}>
+      <div className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-50 transition-opacity transform duration-75 ease-in ${visibility ? 'opacity-100 scale-y-1' : 'opacity-0 scale-y-0'}`}>
         <Dropdown />
       </div>
     </div>

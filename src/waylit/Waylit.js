@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Container } from '@material-ui/core';
+import { Container, GridList } from '@material-ui/core';
 import NextStep from './NextStep';
 import StartCase from './StartCase';
 import TaskTable from './TasksTable';
@@ -33,23 +33,26 @@ const Waylit = (props) => {
               <Spacer height={6} />
               <SelectInput />
               <Spacer height={6} />
-              <Grid item container spacing={3}>
+            </Grid>
+
+            <Grid container item sm={12}>
+              <Grid item sm={10}>
+                <TaskTable />
+              </Grid>
+              <Grid container direction="column" justify="space-evenly" alignItems="center" item sm={2}>
+                <Grid item>
+                  <AvatarGroup />
+                </Grid>
+                <Grid item>
+                  <ToggleInput />
+                </Grid>
                 <Grid item>
                   <Button 
                     text={'Submit'}
                     icon={<CheckWithCircle />}
                   />
-                </Grid>
-                <Grid item className="flex justify-center items-center">
-                  <ToggleInput />
-                </Grid>
-                <Grid className="flex justify-center items-center">
-                  <AvatarGroup />
-                </Grid>
+                </Grid> 
               </Grid>
-            </Grid>
-            <Grid item sm={10}>
-              <TaskTable />
             </Grid>
             <Grid item sm={12}>
               <NavBar />

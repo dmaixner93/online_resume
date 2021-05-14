@@ -12,7 +12,7 @@ const DetailCard = (props) => {
                    baseProfile="full"
                    viewBox="0, 0, 100, 100"
                    className="text-indigo-200" fill="currentColor">
-                <circle cx="50" cy="50" r="49" stroke="#ffffff" class="la-inner-circle" />
+                <circle cx="50" cy="50" r="49" stroke="#ffffff" className="la-inner-circle" />
                 <text className="font-sans font-semibold text-4xl text-indigo-600" x="26" y="65" fill="currentColor">LH</text>
               </svg>
               </div>
@@ -32,7 +32,7 @@ const DetailCard = (props) => {
           </div>
         </div>
         <div>
-          <div className="h-14 flex justify-between rounded-b-md items-center bg-gray-100 dark:bg-gray-700 hover:underline">
+          <div className="h-14 flex justify-between rounded-b-md items-center bg-gray-100 dark:bg-gray-700 dark:bg-opacity-60 hover:underline">
             <div className="ml-10 min-w-0 text-sm flex-1 text-indigo-500">
               Prevailing Wage
             </div>

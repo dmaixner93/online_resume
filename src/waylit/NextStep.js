@@ -1,14 +1,16 @@
 import Button from './Button';
+import OfficeSupplies from '../static/waylit/svg/OfficeSupplies';
+import Paper from './Paper';
 
 const NextStep = () => {
-  const src = require("../static/media/office_supplies.png");
+  // const src = require("../static/media/office_supplies.png");
   return (
-    <div className="bg-white dark:bg-gray-800 shadow sm:rounded-lg">
+    <Paper>
       <div className="py-5 sm:py-8 px-10">
         <div className="sm:flex sm:items-center">
           <div className="mt-5 sm:mt-0 sm:mr-6 sm:flex-shrink-0 sm:flex sm:items-center">
             <span className="inline-flex rounded-md">
-              <img src={src.default} alt="calculator on stack of papers" />
+              <OfficeSupplies />
             </span>
           </div>
           <div className="ml-4">
@@ -48,7 +50,7 @@ const NextStep = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Paper>
   );
 };
 

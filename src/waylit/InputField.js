@@ -13,7 +13,7 @@ const InputField = (props) => {
           inputMode="numeric"
           name="exmapleInput"
           placeholder="Enter Prevailing Wage"
-          className="relative z-10 w-full text-sm px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md shadow-xs dark:text-gray-100 focus:input-focus dark:focus:input-focus"
+          className="relative z-10 w-full text-sm px-6 py-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-xs dark:text-gray-100 focus:input-focus dark:focus:input-focus"
         />
     </div>
   );

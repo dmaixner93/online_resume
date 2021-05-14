@@ -1,11 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
+import Paper from './Paper';
 import TableRow from "@material-ui/core/TableRow";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import { taskTableData } from '../static/waylit/sampleData';
 
-const Row = ({ status, task, comments, date, assignee }) => {
+const Row = ({ status, task, comments, date, assignee, index }) => {
   const iconColor = () => {
     switch (status) {
       case "not started":
@@ -19,7 +20,7 @@ const Row = ({ status, task, comments, date, assignee }) => {
     }
   }
   return (
-    <TableRow className="h-16 m-0 p-0 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50">
+    <TableRow className={`h-16 m-0 p-0 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50`}>
       <TableCell className="w-10" />
       <TableCell>
         <div className="flex items-center">
@@ -62,13 +63,13 @@ const Row = ({ status, task, comments, date, assignee }) => {
 
 const TaskTable = (props) => {
   return (
-      <div className="bg-white dark:bg-gray-800 shadow sm:rounded-lg align-middle inline-block min-w-full overflow-hidden">
+      <Paper>
         <div className="w-full mx-auto py-6 pl-6 md:pl-10 border-b border-gray-200 dark:border-gray-700">
           <div className="w-auto">
             <span className="text-gray-700 dark:text-gray-200 font-semibold text-lg">Tasks</span>
           </div>
         </div>
-        <Table className="min-w-full table-auto">
+        <Table className="min-w-full table-auto -mb-px">
           <TableBody>
             {taskTableData.map(row => (
               <Row 
@@ -78,7 +79,7 @@ const TaskTable = (props) => {
             ))}
           </TableBody>
         </Table>
-      </div>
+      </Paper>
   );
 };
 

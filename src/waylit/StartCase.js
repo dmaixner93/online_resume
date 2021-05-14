@@ -14,7 +14,7 @@ const Row = memo(({ candidate, jobTitle, type }) => {
     <TableRow
       onMouseOver={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="cursor-pointer h-12 hover:bg-indigo-500 hover:bg-opacity-10">
+      className="cursor-pointer h-12 hover:bg-indigo-500 hover:bg-opacity-10 dark:hover:bg-gray-700">
       <TableCell className="w-7" />
       <TableCell>
         <span className="font-medium">{candidate}</span>
@@ -24,8 +24,8 @@ const Row = memo(({ candidate, jobTitle, type }) => {
       </TableCell>
       <TableCell align={"right"} className="w-36">
         {hover ? (
-          <div className="flex text-indigo-500 items-center justify-content-end">
-            <span className="block ml-auto mr-2">Start Case</span>
+          <div className="flex items-center justify-content-end">
+            <span className="block text-indigo-500 dark:text-indigo-200 ml-auto mr-2">Start Case</span>
             <ChevronWithCircle />
           </div>
         ) : (
@@ -58,7 +58,7 @@ const StartCase = (props) => {
         </div>
       </div>
       <div className="relative min-w-full bg-white dark:bg-gray-800 mt-10 h-72 overflow-y-scroll">
-        <Table className="border-t border-gray-200 dark:border-gray-600">
+        <Table className="border-t border-gray-200 dark:border-gray-700">
           <TableBody>
             {startCaseData.map((row) => (
               <Row key={uuidv4()} {...row} />
