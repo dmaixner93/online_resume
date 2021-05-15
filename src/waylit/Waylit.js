@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { Container, GridList } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import NextStep from './NextStep';
 import StartCase from './StartCase';
 import TaskTable from './TasksTable';
