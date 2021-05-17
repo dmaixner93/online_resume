@@ -1,4 +1,5 @@
 import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
 import Section from './utils/Section';
 import VerticalTabs from './Tabs/VerticalTabs';
 import Introduction from './Introduction';
@@ -11,6 +12,7 @@ const Main = (props) => {
   const { header } = props;
   return (
     <React.Fragment>
+      <CssBaseline />
       {header}
       <div className="relative overflow-x-hidden">
         <div className="relative w-full px-24">

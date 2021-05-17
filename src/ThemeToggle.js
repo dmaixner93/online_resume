@@ -1,4 +1,4 @@
-import { useContext, useRef, forwardRef } from 'react';
+import React, { useContext, useRef, forwardRef } from 'react';
 import { ThemeContext } from "./contexts/theme.context";
 import Tooltip from '@material-ui/core/Tooltip';
 import Fade from '@material-ui/core/Fade';
@@ -16,13 +16,13 @@ const ThemeToggle = forwardRef(function ThemeToggle(props, ref) {
   }
 
   return (
-    <div {...props} ref={ref} className="h-auto w-auto relative">
+    <React.Fragment>
       <Tooltip
         TransitionComponent={Fade}
         placement="bottom-start"
         aria-label="Toggle light/dark theme"
         title="Toggle light/dark theme">
-        <div className="w-8 h-auto text-gray-700 dark:text-gray-300 cursor-pointer">
+        <span className="w-8 h-auto text-gray-700 dark:text-gray-300 cursor-pointer">
           {theme === "dark" ? (
             <button
               id="themeToggle"
@@ -35,9 +35,9 @@ const ThemeToggle = forwardRef(function ThemeToggle(props, ref) {
               <Brightness3Icon onClick={() => dispatch("dark")} />
             </button>
           )}
-        </div>
+        </span>
       </Tooltip>
-    </div>
+    </React.Fragment>
   );
 });
 

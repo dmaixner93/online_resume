@@ -15,14 +15,14 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Main
-              header={<Header left={<Logo />} />}
+              header={<Header homePage={true} />}
             />
           </Route>
           <Route exact path="/waylit">
             <Waylit
               header={
                 <Header
-                  left={
+                  pageTitle={
                     <SectionHeader
                       title={'Waylit'}
                       disableDivider={true}

@@ -1,29 +1,46 @@
-import React, { createRef } from 'react';
+import React from 'react';
+import AppBar from '@material-ui/core/AppBar';
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Slide from '@material-ui/core/Slide';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import Logo from './assets/Logo';
+import { Link } from 'react-router-dom';
 import ThemeToggle from './ThemeToggle';
 
-const Header = ({ left, backArrow }) => {
-  const tooltipRef = createRef();
-  /** TODO: IF back arrow is true => show back arrow
-   * ELSE => show logo
-   * - Move Page titles to col-2 of grid
-   */
+function HideOnScroll(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({target: window});
+
   return (
-    <header className="fixed z-10 left-0 h-20 w-full">
-      <div className="relative grid grid-cols-6 items-center w-full h-full">
-        <div className="col-span-1 pl-8 h-full flex justify-start items-center">
-          { backArrow ?
-            <div className="w-6 h-6">
-              <ArrowBackIcon />
-            </div> : null
-          }
-          {left}
-        </div>
-        <div className="col-span-1 pr-8 col-start-6 h-full flex justify-end items-center">
-          <ThemeToggle ref={tooltipRef} />
-        </div>
-      </div>
-    </header>
+    <Slide appear={false} direction="down" in={!trigger}>
+      {children}
+    </Slide>
+  );
+}
+
+const Header = ({ homePage, pageTitle, ...props }) => {
+  return (
+    <React.Fragment>
+      <HideOnScroll {...props}>
+        <AppBar elevation={0} color="transparent">
+         <div className="bg-true-gray-100 dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90  grid grid-cols-6 items-center">
+           <div className="col-span-1 text-left px-4">
+            { homePage ? <Logo /> :
+              (<Link to="/">
+                <ArrowBackIcon className="opacity-80 cursor-pointer hover:opacity-100" />
+              </Link>)
+            }
+           </div>
+           <div className="col-span-4 text-center">
+            { pageTitle ? pageTitle : null }
+           </div>
+           <div className="col-span-1 text-right px-4">
+            <ThemeToggle />
+           </div>
+         </div>
+        </AppBar>
+      </HideOnScroll>
+    </React.Fragment>
   )
 }
 
