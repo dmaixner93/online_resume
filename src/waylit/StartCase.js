@@ -25,7 +25,7 @@ const Row = memo(({ candidate, jobTitle, type }) => {
       <TableCell align={"right"} className="w-36">
         {hover ? (
           <div className="flex items-center justify-content-end">
-            <span className="block text-indigo-500 dark:text-indigo-200 ml-auto mr-2">Start Case</span>
+            <span className="block text-indigo-500 dark:text-indigo-300 font-medium ml-auto mr-2">Start Case</span>
             <ChevronWithCircle />
           </div>
         ) : (

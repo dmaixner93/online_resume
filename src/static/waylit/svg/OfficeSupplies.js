@@ -3,7 +3,7 @@ const OfficeSupplies = () => {
     <svg width="98" height="98" viewBox="0 0 98 98" fill="none">
       <path
         d="M49 98C76.062 98 98 76.062 98 49C98 21.938 76.062 0 49 0C21.938 0 0 21.938 0 49C0 76.062 21.938 98 49 98Z"
-        className="text-indigo-50 dark:text-gray-600"
+        className="text-indigo-50 dark:text-gray-700"
         fill="currentColor"
       />
       <path

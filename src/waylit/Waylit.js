@@ -34,7 +34,6 @@ const Waylit = (props) => {
               <SelectInput />
               <Spacer height={6} />
             </Grid>
-
             <Grid container item sm={12}>
               <Grid item sm={10}>
                 <TaskTable />

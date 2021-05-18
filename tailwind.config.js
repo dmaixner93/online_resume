@@ -17,12 +17,11 @@ module.exports = {
     },
     fontFamily: {
       sans: ['"Inter"', ...defaultTheme.fontFamily.sans],
-      mono: ['"Inconsolata"', ...defaultTheme.fontFamily.mono],
     },
     extend: {
       minHeight: {
         56: "3.5rem",
-        72: "18rem",
+        80: "20rem",
       },
       colors: {
         white: colors.white,

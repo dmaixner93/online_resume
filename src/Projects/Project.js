@@ -19,7 +19,7 @@ const Project = props => {
   }  
 
   return (
-    <div className="group relative flex h-96 w-full cursor-pointer">
+    <div className="group relative z-0 flex h-96 w-full cursor-pointer">
       <ImageColumn 
         align={align[orientation]}
         name={name} />

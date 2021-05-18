@@ -5,7 +5,7 @@ const SectionHeader = (props) => {
       <div className="relative flex flex-row items-center h-16">
         {sectionNum ? (
           <h3 className="text-left tracking-wide font-semibold flex-shrink-0 text-2xl text-gray-800 dark:text-gray-100">
-            <span className="text-blue-500 text-xl font-mono mr-2 dark:text-blue-300">
+            <span className="text-blue-500 text-xl tracking-tighter mr-2 dark:text-blue-300">
               {sectionNum}&nbsp;
             </span>
             {title}

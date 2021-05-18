@@ -7,7 +7,7 @@ const TabPanelList = (props) => {
     return (
       <tr key={uuidv4()}>
         <td className="flex justify-start pt-2.5">
-          <div className="list-marker"></div>
+          <div className="list-marker mr-2"></div>
         </td>
         <td className="leading-7">
           {item}
@@ -17,7 +17,7 @@ const TabPanelList = (props) => {
   })
   return (
     <div>
-      <Spacer height={2} />
+      <Spacer height={4} />
       <table className="table-auto">
         <tbody>
           {tableItems}

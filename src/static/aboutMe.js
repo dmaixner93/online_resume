@@ -9,7 +9,7 @@ const aboutInfo = {
     ],
       "column_2": [
         "Docker",
-        "Django",
+        "SQL",
         "Adobe Suite",
         "Git",
     ],

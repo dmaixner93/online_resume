@@ -3,8 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  div, p, span, h3 {
+  ::selection {
+    @apply bg-blue-600 dark:bg-blue-300 dark:bg-opacity-30 bg-opacity-25;
+  }
+  div, p, span, h3, h4 {
     @apply text-gray-900 dark:text-gray-100;
+  }
+}
+
+@layer components {
+  .list-marker {
+    @apply inline-block w-2.5 h-2.5 rounded-full border border-blue-500 dark:border-blue-300;
   }
 }
 
@@ -13,7 +22,7 @@
     @apply absolute left-0 right-0;
   }
   .page-enter {
-    @apply transform translate-x-full;
+    @apply transform -translate-x-full;
   }
   .page-enter-active {
     @apply transform translate-x-0 transition duration-300;
@@ -22,7 +31,7 @@
     @apply transform translate-x-0;
   }
   .page-exit-active {
-    @apply transform translate-x-full transition duration-300;
+    @apply transform -translate-x-full transition duration-300;
   }
   @variants focus {
     .input-focus {
@@ -34,10 +43,6 @@
       @apply outline-none ring ring-indigo-300 ring-opacity-50 border border-indigo-400;
     }
   }
-}
-
-.list-marker {
-  @apply inline-block w-2.5 h-2.5 mr-2 rounded-full border border-blue-500 dark:border-blue-300;
 }
 
 /**
