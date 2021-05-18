@@ -32,8 +32,8 @@ const DetailCard = (props) => {
           </div>
         </div>
         <div>
-          <div className="h-14 flex justify-between rounded-b-md items-center bg-gray-100 dark:bg-gray-700 dark:bg-opacity-60 hover:underline">
-            <div className="ml-10 min-w-0 text-sm flex-1 text-indigo-500">
+          <div className="h-14 flex justify-between rounded-b-md items-center bg-gray-100 dark:bg-gray-700 dark:bg-opacity-60">
+            <div className="ml-10 min-w-0 text-sm flex-1 text-indigo-500 hover:underline">
               Prevailing Wage
             </div>
             <div className="mr-5">

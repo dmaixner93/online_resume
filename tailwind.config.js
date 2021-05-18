@@ -10,7 +10,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       gray: colors.coolGray,
-      blue: colors.lightBlue,
+      blue: colors.blue,
       green: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.amber,
@@ -20,16 +20,12 @@ module.exports = {
       mono: ['"Inconsolata"', ...defaultTheme.fontFamily.mono],
     },
     extend: {
-      spacing: {
-        '18': '4.5rem',
-      },
       minHeight: {
+        56: "3.5rem",
         72: "18rem",
       },
       colors: {
-        "true-gray": colors.trueGray,
         white: colors.white,
-        purple: colors.purple,
       },
       container: {
         center: true,

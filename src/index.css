@@ -9,6 +9,21 @@
 }
 
 @layer utilities {
+  .page {
+    @apply absolute left-0 right-0;
+  }
+  .page-enter {
+    @apply transform translate-x-full;
+  }
+  .page-enter-active {
+    @apply transform translate-x-0 transition duration-300;
+  }
+  .page-exit {
+    @apply transform translate-x-0;
+  }
+  .page-exit-active {
+    @apply transform translate-x-full transition duration-300;
+  }
   @variants focus {
     .input-focus {
       @apply outline-none ring ring-indigo-500 ring-opacity-20 border border-indigo-500;

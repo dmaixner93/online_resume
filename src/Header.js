@@ -22,8 +22,8 @@ const Header = ({ homePage, pageTitle, ...props }) => {
   return (
     <React.Fragment>
       <HideOnScroll {...props}>
-        <AppBar elevation={0} color="transparent">
-         <div className="bg-true-gray-100 dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90  grid grid-cols-6 items-center">
+        <AppBar elevation={0} className="border-b border-gray-200 dark:border-gray-700" color="transparent">
+         <div className="bg-gray-50 dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 grid grid-cols-12 py-4 min-h-56 items-center">
            <div className="col-span-1 text-left px-4">
             { homePage ? <Logo /> :
               (<Link to="/">
@@ -31,8 +31,8 @@ const Header = ({ homePage, pageTitle, ...props }) => {
               </Link>)
             }
            </div>
-           <div className="col-span-4 text-center">
-            { pageTitle ? pageTitle : null }
+           <div className="col-span-10 text-left">
+             <h3 className="font-semibold tracking-tight text-xl">{ pageTitle ? pageTitle : null }</h3>
            </div>
            <div className="col-span-1 text-right px-4">
             <ThemeToggle />
