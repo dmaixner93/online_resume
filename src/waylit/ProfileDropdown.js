@@ -29,17 +29,20 @@ const Dropdown = ({ visibility }) => {
 const ProfileDropdown = () => {
   const [ visibility, setVisibility ] = useToggle(false);
   return (
-    <div className="ml-auto relative">
-      <div>
-        <button onClick={() => setVisibility()} className="flex items-center text-white text-sm border-2 border-transparent rounded-full px-3 focus:outline-none focus:border-gray-300 dark:focus:border-gray-600 hover:bg-white hover:bg-opacity-10">
-          <span className="text-white text-sm w-full p-2">
-            Aubrey Graham
-          </span>
-          <svg className="transform duration-300 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 20 20">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 8l-5 5-5-5" />
-          </svg>
-        </button>
-      </div>
+    <div className="relative left-0">
+      <button onClick={() => setVisibility()} className="flex items-center ml-auto text-white text-sm border-2 border-transparent rounded-full px-3 focus:outline-none focus:border-gray-300 dark:focus:border-gray-600 hover:bg-white hover:bg-opacity-10">
+        <svg className="block md:hidden" viewBox="0 0 36 36" fill="none" width="36" height="36">
+          <circle fill="#FEF3C7" cx="18" cy="18" r="17" />
+          <text x="8" y="22.5" fill="#D97706
+          ">AG</text>
+        </svg>
+        <span className="hidden md:block text-white text-sm w-full p-2">
+          Aubrey Graham
+        </span>
+        <svg className="hidden md:block transform duration-300 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 20 20">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M14 8l-5 5-5-5" />
+        </svg>
+      </button>
       <div className={`origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg z-50 transition-opacity transform duration-75 ease-in ${visibility ? 'opacity-100 scale-y-1' : 'opacity-0 scale-y-0'}`}>
         <Dropdown />
       </div>

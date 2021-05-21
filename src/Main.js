@@ -7,6 +7,7 @@ import SectionHeader from './utils/SectionHeader';
 import Spacer from './utils/Spacer';
 import AboutMe from './AboutMe';
 import Projects from './Projects/Projects';
+// import ProjectGrid from './ProjectGrid';
 
 const Main = (props) => {
   const { header } = props;

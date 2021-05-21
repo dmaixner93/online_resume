@@ -20,19 +20,19 @@ const Row = ({ status, task, comments, date, assignee, index }) => {
     }
   }
   return (
-    <TableRow className={`h-16 m-0 p-0 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50`}>
-      <TableCell className="w-10" />
+    <TableRow className="h-16 m-0 p-0 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:bg-opacity-50">
+      <TableCell className="md:w-10"/>
       <TableCell>
-        <div className="flex items-center">
+        <div className="ml-4 md:ml-0 flex items-center">
           <div className={`h-4 w-4 flex-shrink-0 rounded-full border-2 border-${iconColor()}`}></div>
-          <div className="ml-4">
-            <div className="font-medium truncate capitalize">
+          <div className="ml-2 md:ml-4">
+            <div className="font-medium w-32 md:w-auto truncate capitalize">
               <span className="cursor-text">{task}</span>
             </div>
           </div>
         </div>
       </TableCell>
-      <TableCell align={"left"}>
+      <TableCell className="hidden md:table-cell" align={"left"}>
           {comments > 0 ?
             <div className="flex justify-center md:mr-6 items-center cursor-pointer">
               <div className="font-medium">{comments} comments</div>
@@ -50,9 +50,9 @@ const Row = ({ status, task, comments, date, assignee, index }) => {
       <TableCell align={"center"}>
         <span className="cursor-text">{date}</span>
       </TableCell>
-      <TableCell align={'right'}>
+      <TableCell className="hidden md:table-cell" align={'right'}>
         <span className="ml-4 font-medium cursor-pointer">
-          <span className="cursor-text">{assignee}</span>
+          {assignee}
         </span>
         {/* include 'svg/chevron_right.svg' with width='w-5' height='h-5' */}
       </TableCell>
@@ -64,7 +64,7 @@ const Row = ({ status, task, comments, date, assignee, index }) => {
 const TaskTable = (props) => {
   return (
       <Paper>
-        <div className="w-full mx-auto py-6 pl-6 md:pl-10 border-b border-gray-200 dark:border-gray-700">
+        <div className="w-full mx-auto py-4 pl-4 md:pl-10 border-b border-gray-200 dark:border-gray-700">
           <div className="w-auto">
             <span className="text-gray-700 dark:text-gray-200 font-semibold text-lg">Tasks</span>
           </div>

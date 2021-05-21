@@ -49,7 +49,7 @@ const SelectInput = (props) => {
       <div className="relative">
         <button
             type="button"
-            className="relative w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-sm pl-3 pr-10 py-3 text-left cursor-default dark:text-gray-100 focus:input-focus sm:text-sm"
+            className="relative w-full bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-md shadow-sm pl-3 pr-10 py-2.5 text-left cursor-default dark:text-gray-100 focus:input-focus sm:text-sm"
             onClick={() => state.isOpen ? dispatch({ type: "CLOSE" }) : dispatch({ type: "OPEN" })}
             aria-haspopup="listbox"
             aria-expanded="true"

@@ -23,6 +23,9 @@ module.exports = {
         56: "3.5rem",
         80: "20rem",
       },
+      maxWidth: {
+        screen: '100vw'
+      },
       colors: {
         white: colors.white,
       },

@@ -4,8 +4,8 @@ import { useToggle } from './hooks/useToggle';
 const ToggleInput = (props) => {
   const [ state, toggle ] = useToggle(true);
   return (
-    <React.Fragment>
-        <div className="float-right flex items-center">
+      <React.Fragment>
+        <div className="relative mx-auto flex justify-center items-center">
           <input id="id_is_first_h1b" name="is_first_h1b" type="checkbox" hidden />
           <div onClick={() => toggle(state)}
             tabIndex="0" aria-checked="true"

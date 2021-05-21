@@ -49,8 +49,12 @@
  Material-UI Overrides
 */
 
+.MuiAppBar-root {
+  @apply left-0 md:left-auto !important;
+}
+
 .MuiContainer-root {
-  @apply px-24 !important;
+  @apply lg:px-24 !important;
 }
 
 .MuiTableCell-root {

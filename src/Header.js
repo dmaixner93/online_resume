@@ -23,7 +23,7 @@ const Header = ({ homePage, pageTitle, ...props }) => {
   return (
     <React.Fragment>
       <HideOnScroll {...props}>
-        <AppBar elevation={0} className="border-b border-gray-200 dark:border-gray-700 dark:border-opacity-70" color="transparent">
+        <AppBar elevation={0} className="border-b border-gray-200 dark:border-gray-700 dark:border-opacity-70 max-w-screen left-0" color="transparent">
          <div className="flex items-center bg-gray-50 dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 min-h-56">
            <div className="text-left px-4">
             { homePage ? <Logo /> :
@@ -32,7 +32,7 @@ const Header = ({ homePage, pageTitle, ...props }) => {
               </Link>)
             }
            </div>
-           <Container className="text-left">
+           <Container className="text-center lg:text-left">
              <h3 className="font-semibold tracking-tight text-xl">{ pageTitle ? pageTitle : null }</h3>
            </Container>
            <div className="text-right px-4">

@@ -43,7 +43,7 @@ const NavBarTabs = () => {
   };
 
   return (
-    <div className="flex items-center px-2 lg:px-0">
+    <div className="flex items-center lg:px-0">
       <div className="lg:block lg:ml-8">
         <div className="grid grid-flow-col grid-cols-auto gap-x-2">
           {tabs()}

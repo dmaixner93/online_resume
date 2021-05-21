@@ -2,12 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import { ThemeProvider } from "@material-ui/core/styles";
+import { StylesProvider } from '@material-ui/core/styles';
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createMuiTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router } from "react-router-dom";
 
 const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      'xs': 0,
+      'sm': 640,
+      'md': 768,
+      'lg': 1280,
+    },
+  },
   typography: {
     fontFamily: [
       'Inter',
@@ -30,12 +39,16 @@ const theme = createMuiTheme({
   },
 });
 
+window.muiTheme = {...theme};
+
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
-      <Router>
-        <App />
-      </Router>
+      <StylesProvider injectFirst>
+        <Router>
+          <App />
+        </Router>
+      </StylesProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
