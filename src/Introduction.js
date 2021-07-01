@@ -8,10 +8,10 @@ const Introduction = () => {
       <h1 className="text-4xl text-gray-600 dark:text-gray-100 font-semibold">Daniel Maixner</h1>
       <p className="text-5xl">I design and build digital platforms.</p>
       <p className="leading-6 max-w-xl">
-      Based in St. Louis, I am a self-taught software engineer. I currently work at World Wide Technology as a software engineer, enhancing their internal applications that engineers work with everyday in the company.
+      Based in St. Louis, I am a self-taught software engineer. I have a passion for building applications utilizing proven best practices to provide exceptional user-experiences.
       </p>
       <Spacer height={4} />
-      <Button />
+      <Button text={'View Resume'} />
     </div>
   )
 }

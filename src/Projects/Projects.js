@@ -19,7 +19,7 @@ const Projects = () => {
             description={description}
           />
         </Link>
-        <Spacer height={20} />
+        <Spacer height={16} />
       </div>
   )})
   return (

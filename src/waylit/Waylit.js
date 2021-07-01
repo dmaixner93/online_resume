@@ -21,9 +21,9 @@ const Waylit = (props) => {
   return (
     <React.Fragment>
       {header}
-      <Container className="border border-blue-300" fixed>
+      <Container fixed>
         <Spacer height={20} />
-        <Grid container className="dev-border" spacing={2}>
+        <Grid container spacing={2}>
           <Grid item xs={12} lg={8}>
             <NextStep />
           </Grid>
