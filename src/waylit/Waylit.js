@@ -22,7 +22,7 @@ const Waylit = (props) => {
     <React.Fragment>
       {header}
       <Container className="mt-4" fixed>
-        <Spacer height={20} />
+        <Spacer height={16} />
         <Grid container spacing={2}>
           <Grid item xs={12} lg={8}>
             <NextStep />
