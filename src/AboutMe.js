@@ -6,8 +6,7 @@ const AboutMe = () => {
     <div className="text-gray-600 dark:text-gray-300 w-full h-auto flex">
       <div className="leading-6 w-3/5 text-left">
         <p>
-          I am eager to begin using my
-          education and skills in software development to take an even more hands-on approach. I am passionate about creating and building technology people interact with every day. I strive to build applications that provide an exceptional user experience.
+          I am eager to begin using my education and skills in software development to take an even more hands-on approach. I am passionate about creating and building technology people interact with every day. I strive to build applications that provide an exceptional user experience.
         </p>
         <br />
         <p>Some of my skills include:</p>
