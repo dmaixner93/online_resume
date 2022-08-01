@@ -4,7 +4,7 @@ import { Container } from "@material-ui/core";
 import NextStep from "./NextStep";
 import StartCase from "./StartCase";
 import TaskTable from "./TasksTable";
-import Spacer from "../utils/Spacer";
+import Spacer from "../components/Spacer";
 import InputField from "./InputField";
 import SelectInput from "./SelectInput";
 import DetailCard from "./DetailCard";
@@ -13,7 +13,7 @@ import Button from "./Button";
 import AvatarGroup from "./AvatarGroup";
 import ToggleInput from "./ToggleInput";
 import CheckWithCircle from "../static/waylit/svg/CheckWithCircle";
-import FooterNote from "../utils/FooterNote";
+import FooterNote from "../components/FooterNote";
 import footerText from "../static/waylit/footerText";
 
 const Waylit = (props) => {

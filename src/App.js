@@ -1,8 +1,8 @@
 import React from "react";
-import Main from "./Main";
+import Main from "./pages/main/Main";
 import { CSSTransition } from "react-transition-group";
 import Waylit from "./waylit/Waylit";
-import Header from "./Header";
+import Header from "./components/Header";
 import { ThemeProvider } from "./contexts/theme.context";
 import { Switch, Route } from "react-router-dom";
 
