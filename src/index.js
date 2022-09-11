@@ -5,10 +5,10 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import { StylesProvider } from '@material-ui/core/styles';
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router } from "react-router-dom";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   breakpoints: {
     values: {
       'xs': 0,

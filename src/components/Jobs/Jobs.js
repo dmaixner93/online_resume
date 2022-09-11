@@ -1,8 +1,8 @@
 import React from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import TabPanel from "./TabPanel";
-import Jobs from "../../static/jobs";
+import JobDescriptionPanel from "./JobDescriptionPanel";
+import JobData from "../../static/jobData";
 import { v4 as uuidv4 } from "uuid";
 
 function a11yProps(index) {
@@ -12,14 +12,14 @@ function a11yProps(index) {
   };
 }
 
-export default function VerticalTabs() {
+export default function Jobs() {
   const [value, setValue] = React.useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   const tabs = { labels: [], panels: [] };
 
-  Jobs.forEach((job) => {
+  JobData.forEach((job) => {
     tabs.labels.push(
       <Tab
         className="hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
@@ -32,7 +32,7 @@ export default function VerticalTabs() {
       />
     );
     tabs.panels.push(
-      <TabPanel
+      <JobDescriptionPanel
         key={uuidv4()}
         details={job}
         value={value}

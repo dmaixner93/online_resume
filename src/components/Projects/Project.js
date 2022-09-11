@@ -1,8 +1,8 @@
 import ImageColumn from './ImageColumn';
-import TextColumn from '../TextColumn';
+import TextColumn from './TextColumn';
 
 const Project = props => {
-  const { name, orientation } = props;
+  const { image, orientation } = props;
   const align = {
     right: {
       position: 'right-0',
@@ -19,10 +19,10 @@ const Project = props => {
   }  
 
   return (
-    <div className="group relative z-0 flex h-96 w-full cursor-pointer">
+    <div className="group relative z-0 flex h-96 w-full">
       <ImageColumn 
         align={align[orientation]}
-        name={name} />
+        image={image} />
       <TextColumn 
         align={align[orientation]}
         {...props}

@@ -5,8 +5,8 @@ import Spacer from '../ components/Spacer';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
-  const allProjects = projects.map(project => {
-    const { id, title, name, description } = project;
+  const projectsData = projects.map(project => {
+    const { id, title, image, description } = project;
     const orientation = (project.id % 2) === 0 ? 'left' : 'right';
     return (
       <div key={uuidv4()} className="project-wrapper">
@@ -15,7 +15,7 @@ const Projects = () => {
             id={id}
             orientation={orientation}
             title={title}
-            name={name}
+            image={image}
             description={description}
           />
         </Link>
@@ -23,7 +23,7 @@ const Projects = () => {
       </div>
   )})
   return (
-    allProjects
+    projectsData
   )
 }
 

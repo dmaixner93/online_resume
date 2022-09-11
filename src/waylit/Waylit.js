@@ -21,36 +21,45 @@ const Waylit = (props) => {
   return (
     <React.Fragment>
       {header}
-      <Container className="mt-4" fixed>
+      <Container className="mt-4">
         <Spacer height={16} />
         <Grid container spacing={2}>
           <Grid item xs={12} lg={8}>
             <NextStep />
           </Grid>
           <Grid container item xs={12} lg={4}>
-            <Grid container spacing={1} item xs={12} md={6} lg={12}>
-              <Grid item xs={12}>
+            <Grid
+              container
+              spacing={1}
+              item
+              xs={12}
+              md={6}
+              lg={12}
+            >
+              <Grid item xs={6} lg={12}>
                 <InputField />
               </Grid>
-              <Grid item xs={12}>
+              <Grid item xs={5} lg={12}>
                 <SelectInput />
               </Grid>
             </Grid>
             <Grid
               item
-              xs={12} md={6} lg={12}
+              xs={12}
+              md={6}
+              lg={12}
               container
               direction="row"
               spacing={2}
-              className="mt-2 sm:mt-0 px-3 lg:px-0 justify-center md:justify-between items-start lg:items-center"
+              className="mt-2 sm:mt-0 justify-center md:justify-between items-start lg:items-center"
               >
-              <Grid item xs={12} md={6} lg={5} className="flex justify-center lg:block">
+              <Grid item xs={12} md={4} lg={5}>
                 <Button text={"Submit"} icon={<CheckWithCircle />} />
               </Grid>
-              <Grid item xs={12} md={6} lg={3}>
+              <Grid item xs={12} md={4} lg={3}>
                 <ToggleInput />
               </Grid>
-              <Grid className="md:flex md:justify-center lg:justify-end" item xs={12} md={12} lg={4}>
+              <Grid className="md:flex md:justify-center lg:justify-end" item xs={12} md={4} lg={4}>
                 <AvatarGroup />
               </Grid>
             </Grid>

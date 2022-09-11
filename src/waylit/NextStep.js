@@ -8,10 +8,10 @@ const NextStep = () => {
     <Paper>
       <div className="py-5 sm:py-8 px-10">
         <div className="sm:flex sm:items-center">
-          <div className="hidden mt-5 xl:mt-0 xl:mr-6 xl:flex-shrink-0 xl:flex xl:items-center">
+          <div className="hidden mt-5 md:mt-0 md:mr-6 md:flex-shrink-0 md:flex md:items-center">
             <OfficeSupplies />
           </div>
-          <div className="xl:ml-4">
+          <div className="md:ml-4">
             <div>
               <span className="leading-5 uppercase text-indigo-500 dark:text-indigo-300 font-semibold tracking-wider text-xs">
                 Next Action
