@@ -5,7 +5,7 @@ import Spacer from '../../components/Spacer';
 
 const Projects = () => {
   const allProjects = projects.map((project, idx) => {
-    const { id, title, image, description } = project;
+    const { id, title, image, description, projectLink } = project;
     const orientation = (idx % 2) === 0 ? 'left' : 'right';
     return (
       <div key={uuidv4()} className="project-wrapper">
@@ -15,6 +15,7 @@ const Projects = () => {
           title={title}
           image={image}
           description={description}
+          projectLink={projectLink}
         />
         <Spacer height={16} />
       </div>

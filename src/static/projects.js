@@ -5,14 +5,14 @@ const projects = [
     "title": "Waylit",
     "description": "Waylit is a digital platform that provides a central location for all parties involved in the immigration process. From task assignments, uploading documents, and communicating.",
     "texhStack": [],
-    "link": "/waylit/main",
+    "projectLink": "../waylit/Waylit.js",
   },
   {
     "id": 2,
     "image": "wwt-cover-photo.png",
     "title": "World Wide Technology",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-    "link": "#",
+    "projectLink": "../wwt/Wwt",
   },
 ];
 

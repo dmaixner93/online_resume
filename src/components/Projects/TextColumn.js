@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const TextColumn = ({ description, title, align, techStack, }) => {
+const TextColumn = ({ description, title, align, projectLink, }) => {
   return (
     <div draggable="false" className={`absolute ${align.position} max-w-lg w-full h-full`}>
       <div className={`relative w-full h-full ${align.flex} flex flex-col ${align.text} justify-center text-gray-500 dark:text-gray-300`}>
@@ -12,8 +12,8 @@ const TextColumn = ({ description, title, align, techStack, }) => {
         {/* <div className="mt-4 font-mono">{techStack}</div> */}
         <div className="relative z-10 text-sm">
           <Link
-            to="/waylit"
-            className="cursor-pointer text-blue-500 font-medium"
+            to={projectLink}
+            className="cursor-pointer text-blue-500 font-medium dark:text-blue-300"
           >
             Check it out
           </Link>
