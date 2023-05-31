@@ -3,25 +3,22 @@ import skills from '../../static/skills';
 
 const AboutMe = () => {
   return (
-    <div className="text-gray-600 dark:text-gray-300 w-full h-auto flex">
-      <div className="leading-6 w-3/5 text-left">
+    <div className="text-gray-600 dark:text-gray-300 w-full h-auto lg:flex">
+      <div className="leading-6 lg:w-3/5 text-left">
         <p>
-          I am passionate about creating and building technology people interact with every day. I strive to build applications that provide improve user experience (for clients and owners), are intuitive, and look good. 
+          I am passionate about creating and building technology people interact with every day. I strive to build applications that provide improve user experience, are intuitive, and look good. 
         </p>
         <br />
-        <p>Some skills I have become familiar with so far</p>
+        <p>Technology I have worked with so far...</p>
         <br />
-        <div className="flex">
-          <div className="w-1/2 h-auto">
-            <Table data={skills.column_1} />
-          </div>
-          <div className="w-1/2 h-auto">
-            <Table data={skills.column_2} />
+        <div className="block lg:flex">
+          <div className="w-full lg:w-1/2 h-auto">
+            <Table data={skills} />
           </div>
         </div>
       </div>
       {/* Photo place holder */}
-      <div className="relative w-2/5 bg-gray-200 bg-opacity-50 mx-8">
+      <div className="relative bg-gray-200 bg-opacity-50 hidden lg:block lg:mx-8 lg:w-2/5">
         <div className="absolute z-10 w-full h-full bg-blue-500 dark:bg-blue-400 mix-blend-overlay dark:mix-blend-darken opacity-90"></div>
         <img className="filter grayscale" src={require('../../static/media/dm_333_297.JPG').default} alt="self portrait" />
       </div>

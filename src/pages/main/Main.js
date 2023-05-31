@@ -16,7 +16,7 @@ const Main = (props) => {
       <CssBaseline />
       {header}
       <div className="relative overflow-x-hidden">
-        <div className="relative w-full px-24">
+        <div className="relative w-full px-8 lg:px-24">
           <Section>
             <Introduction />
           </Section>
@@ -25,6 +25,7 @@ const Main = (props) => {
             <Spacer height={10} />
             <AboutMe />
           </Section>
+          <div className="h-16 w-full lg:hidden"></div>
           <Section>
             <SectionHeader sectionNum={"03"} title={"My Experience"} />
             <Spacer height={10} />

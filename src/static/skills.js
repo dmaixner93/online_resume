@@ -1,16 +1,12 @@
-const skills = { 
-  "column_1": [
-    "Javascript",
-    "CSS",
-    "HTML",
-    "Python",
-  ],
-  "column_2": [
-    "RESTful APIs",
-    "Mongo",
-    "Adobe Suite",
-    "Git",
-  ],
-};
+const skills = [
+  "Javascript",
+  "CSS",
+  "HTML",
+  "Python",
+  "RESTful APIs",
+  "Mongo",
+  "Adobe Creative Suite",
+  "Git",
+];
 
 export default skills;
