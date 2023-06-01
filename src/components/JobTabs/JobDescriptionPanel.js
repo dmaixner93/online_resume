@@ -10,7 +10,7 @@ const JobDescriptionPanel = props => {
 
   return (
     <div
-      className="max-w-2xl w-full text-left focus-within"
+      className="w-full text-left focus-within p-4"
       role="tabpanel"
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
@@ -18,9 +18,8 @@ const JobDescriptionPanel = props => {
     >
       {value === index && (
         <Box p={3}>
-          <ProjectTitle {...details} />
           <Spacer height={4} />
-          <Typography>{details?.body?.description}</Typography>
+          <ProjectTitle {...details} />
           <JobPanelList {...details} />
         </Box>
       )}

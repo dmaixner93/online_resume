@@ -19,10 +19,11 @@ export default function Jobs() {
   };
   const tabs = { labels: [], panels: [] };
 
+  // Title/Labels for tabs
   JobData.forEach((job) => {
     tabs.labels.push(
       <Tab
-        className="hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none"
+        className="hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none text-sm lg:text-base"
         disableFocusRipple={true}
         disableRipple={true}
         label={job.company}
@@ -43,16 +44,16 @@ export default function Jobs() {
   });
 
   return (
-    <div className="bg-transparent flew-grow flex min-h-80 h-auto text-gray-600 dark:text-gray-300">
+    <div className="max-w-3xl bg-transparent h-auto text-gray-600 dark:text-gray-300">
       <Tabs
-        orientation="vertical"
-        variant="standard"
         indicatorColor="secondary"
         textColor="inherit"
+        scrollButtons="auto"
+        variant="scrollable"
         value={value}
         onChange={handleChange}
         aria-label="Job experience tabs"
-        className="border-r bg-transparent dark:border-gray-100 border-opacity-10 dark:border-opacity-10">
+        className="border-r bg-transparent dark:border-gray-100 border-opacity-10 dark:border-opacity-10" >
         {tabs.labels}
       </Tabs>
       {tabs.panels}
