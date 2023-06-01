@@ -4,16 +4,23 @@ const Table = (props) => {
   const { data } = props;
 
   const tbody = data.map(item => {
+    const { mainItem, subItems } = item;
     return (
-    <tr key={uuidv4()}>
-      <td className="list-marker"></td>
-      <td>{item}</td>
+      <tr
+        key={uuidv4()}>
+        <td className="leading-6">
+          <span className="block text-base">{mainItem}</span>
+          <span className="block text-sm dark:text-gray-400">{subItems.join(', ')}</span>
+        </td>
     </tr>
     )
   });
 
   return (
-    <table className="w-full h-auto table-auto">
+    <table
+      cellpadding="4px"
+      cellSpacing="12px"
+      className="w-full h-auto table-auto">
       <tbody>
         {tbody}
       </tbody>

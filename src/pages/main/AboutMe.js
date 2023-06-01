@@ -12,16 +12,12 @@ const AboutMe = () => {
         <p>Technology I have worked with so far...</p>
         <br />
         <div className="block lg:flex">
-          <div className="w-full lg:w-1/2 h-auto">
+          <div className="w-full h-auto">
             <Table data={skills} />
           </div>
         </div>
       </div>
       {/* Photo place holder */}
-      <div className="relative bg-gray-200 bg-opacity-50 hidden lg:block lg:mx-8 lg:w-2/5">
-        <div className="absolute z-10 w-full h-full bg-blue-500 dark:bg-blue-400 mix-blend-overlay dark:mix-blend-darken opacity-90"></div>
-        <img className="filter grayscale" src={require('../../static/media/dm_333_297.JPG').default} alt="self portrait" />
-      </div>
     </div>
   );
 };
