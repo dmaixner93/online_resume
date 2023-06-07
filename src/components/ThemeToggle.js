@@ -19,10 +19,10 @@ const ThemeToggle = forwardRef(function ThemeToggle(props, ref) {
       }
     })
 
-  if (theme === "dark") {
-    html.current.classList.add("dark");
+  if (theme === 'dark') {
+    html.current.classList.add('dark');
   } else {
-    html.current.classList.remove("dark");
+    html.current.classList.remove('dark');
   }
 
   return (
