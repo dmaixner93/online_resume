@@ -1,7 +1,8 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Section from '../../components/Section';
-import Jobs from '../../components/home/JobTabs/Jobs';
+// import Jobs from '../../components/home/JobTabs/Jobs';
+import ProjectCards from '../../components/home/ProjectCards/Cards';
 import SectionHeader from '../../components/SectionHeader';
 import Spacer from '../../components/Spacer';
 import Projects from '../../components/Projects/Projects';
@@ -29,7 +30,8 @@ const Main = (props) => {
           <Section>
             <SectionHeader sectionNum={"03"} title={"My Experience"} />
             <Spacer height={10} />
-            <Jobs />
+            {/* <Jobs /> */}
+            <ProjectCards />
           </Section>
           <Section>
             <SectionHeader sectionNum={"04"} title={"Samples of My Work"} />

@@ -3,7 +3,7 @@ const colors = require("tailwindcss/colors");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: ["./src/**/*.{js,jsx}", "./public/index.html"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     colors: {
@@ -41,7 +41,6 @@ module.exports = {
   },
   variants: {
     extend: {
-      filter: ["group-hover"],
       translate: ["group-hover"],
     },
   },
