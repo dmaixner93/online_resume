@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const TextColumn = ({ description, title, align, projectLink, }) => {
   return (
-    <div draggable="false" className={`absolute ${align.position} max-w-lg w-full h-full`}>
+    <div draggable="false" className={`absolute ${align.position} max-w-lg w-full h-full p-4 lg:p-0`}>
       <div className={`relative w-full h-full ${align.flex} flex flex-col ${align.text} justify-center text-gray-500 dark:text-gray-300`}>
         <span className="font-mono text-gray-500 dark:text-gray-300">Project</span>
         <h4 className="font-semibold text-2xl">{title}</h4>

@@ -5,7 +5,7 @@ const projects = [
     "title": "Waylit",
     "description": "Waylit is a digital platform that provides a central location for all parties involved in the immigration process. From task assignments, uploading documents, and communicating.",
     "texhStack": [],
-    "projectLink": "../waylit/Waylit.js",
+    "projectLink": "../waylit",
   },
   {
     "id": 2,

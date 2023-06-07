@@ -44,7 +44,10 @@ export default function Jobs() {
   });
 
   return (
-    <div className="max-w-3xl bg-transparent h-auto text-gray-600 dark:text-gray-300">
+    <div
+      id="job-tabs"
+      className="max-w-3xl bg-transparent h-auto text-gray-600 dark:text-gray-300"
+    >
       <Tabs
         indicatorColor="secondary"
         textColor="inherit"

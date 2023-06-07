@@ -1,5 +1,5 @@
-import Project from './Projects/Project';
-import projects from '../static/projects';
+import Project from '../Projects/Project';
+import projects from '../../static/projects';
 import { v4 as uuidv4 } from 'uuid';
 import Spacer from '../ components/Spacer';
 import { Link } from 'react-router-dom';
