@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import Box from '@material-ui/core/Box';
 import ProjectTitle from './JobTitle';
-import Spacer from '../Spacer';
+import Spacer from '../../Spacer';
 import JobPanelList from './JobPanelList';
 
 const JobDescriptionPanel = props => {

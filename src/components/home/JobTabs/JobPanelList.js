@@ -1,4 +1,4 @@
-import Spacer from '../Spacer';
+import Spacer from '../../Spacer';
 import { v4 as uuidv4 } from "uuid";
 
 const TabPanelList = (props) => {

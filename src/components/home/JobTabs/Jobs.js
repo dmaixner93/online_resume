@@ -2,7 +2,7 @@ import React from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import JobDescriptionPanel from "./JobDescriptionPanel";
-import JobData from "../../static/jobData";
+import JobData from "../../../static/jobData";
 import { v4 as uuidv4 } from "uuid";
 
 function a11yProps(index) {
