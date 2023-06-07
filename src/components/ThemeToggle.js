@@ -8,7 +8,18 @@ const ThemeToggle = forwardRef(function ThemeToggle(props, ref) {
   const { theme, dispatch } = useContext(ThemeContext);
   const html = useRef(document.documentElement);
 
-  if(theme === "dark") {
+  window.matchMedia('(prefers-color-scheme: dark)')
+    .addEventListener('change', e => {
+      if (e.matches) {
+        // set dark theme
+        dispatch('dark');
+      } else {
+        // set light theme
+        dispatch('light');
+      }
+    })
+
+  if (theme === "dark") {
     html.current.classList.add("dark");
   } else {
     html.current.classList.remove("dark");

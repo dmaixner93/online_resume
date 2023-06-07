@@ -43,7 +43,7 @@ const theme = createTheme({
 window.muiTheme = {...theme};
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <ThemeProvider theme={theme}>
       <StylesProvider injectFirst>
         <Router>
@@ -51,7 +51,7 @@ ReactDOM.render(
         </Router>
       </StylesProvider>
     </ThemeProvider>
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById("root")
 );
 

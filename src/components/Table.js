@@ -18,7 +18,7 @@ const Table = (props) => {
 
   return (
     <table
-      cellpadding="4px"
+      cellPadding="4px"
       cellSpacing="12px"
       className="w-full h-auto table-auto">
       <tbody>
