@@ -6,18 +6,10 @@ import Brightness3Icon from "@material-ui/icons/Brightness3";
 
 const ThemeToggle = forwardRef(function ThemeToggle(props, ref) {
   const { theme, dispatch } = useContext(ThemeContext);
+  console.log('theme', theme)
   const html = useRef(document.documentElement);
 
-  window.matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', e => {
-      if (e.matches) {
-        // set dark theme
-        dispatch('dark');
-      } else {
-        // set light theme
-        dispatch('light');
-      }
-    })
+  // Place a "watcher" here for .matchMedia()
 
   if (theme === 'dark') {
     html.current.classList.add('dark');

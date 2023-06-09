@@ -5,7 +5,6 @@ import Section from '../../components/Section';
 import ProjectCards from '../../components/home/ProjectCards/Cards';
 import SectionHeader from '../../components/SectionHeader';
 import Spacer from '../../components/Spacer';
-import Projects from '../../components/Projects/Projects';
 import AboutMe from './AboutMe';
 import Introduction from './Introduction';
 // import ProjectGrid from './ProjectGrid';
@@ -22,21 +21,16 @@ const Main = (props) => {
             <Introduction />
           </Section>
           <Section>
-            <SectionHeader sectionNum={"02"} title={"About Me"} />
+            <SectionHeader title={"About Me"} />
             <Spacer height={10} />
             <AboutMe />
           </Section>
           <div className="h-16 w-full lg:hidden"></div>
           <Section>
-            <SectionHeader sectionNum={"03"} title={"My Experience"} />
+            <SectionHeader title={"My Experience"} />
             <Spacer height={10} />
             {/* <Jobs /> */}
             <ProjectCards />
-          </Section>
-          <Section>
-            <SectionHeader sectionNum={"04"} title={"Samples of My Work"} />
-            <Spacer height={10} />
-            <Projects />
           </Section>
         </div>
       </div>

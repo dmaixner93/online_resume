@@ -1,7 +1,7 @@
 import { useReducer, useEffect } from 'react';
 
-function useLocalStorageReducer(key, defaultVal, reducer) {
-  const [state, dispatch] = useReducer(reducer, defaultVal);
+function useLocalStorageReducer(key, value, reducer) {
+  const [state, dispatch] = useReducer(reducer, value);
   useEffect(() => {
     window.localStorage.setItem(key, state);
   }, [state, key]);

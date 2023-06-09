@@ -1,5 +1,5 @@
 const SectionHeader = (props) => {
-  const { sectionNum, title, disableDivider } = props;
+  const { sectionNum, title, } = props;
   return (
     <div className="h-auto w-full">
       <div className="relative flex flex-row items-center h-16">
@@ -15,9 +15,6 @@ const SectionHeader = (props) => {
             {title}
           </h3>
         )}
-        { disableDivider ? (null) :
-          (<div className="ml-6 h-px w-72 bg-gray-600 dark:bg-gray-400 bg-opacity-25"></div>)
-        }
       </div>
     </div>
   );

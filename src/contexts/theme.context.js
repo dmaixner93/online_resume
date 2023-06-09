@@ -6,10 +6,10 @@ import { themeHelper } from "../utils/themeHelpers";
 
 export const ThemeContext = createContext();
 
-const clientPreference = themeHelper();
+const clientPreference = themeHelper.checkSitePreference();
 
 export const ThemeProvider = (props) => {
-  const [theme, dispatch] = useLocalStorageReducer('theme', clientPreference, themeReducer);
+  const [theme, dispatch] = useLocalStorageReducer('theme', clientPreference.theme, themeReducer);
   return (
     <ThemeContext.Provider value={{ theme, dispatch }}>
         { props.children }

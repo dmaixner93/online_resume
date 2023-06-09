@@ -2,7 +2,9 @@ const projects = [
   {
     "id": 1,
     "image": "waylit.png",
+    "imageAlt": "ui components",
     "title": "Waylit",
+    "dates": "March 2020 - April 2021",
     "description": "Waylit is a digital platform that provides a central location for all parties involved in the immigration process. From task assignments, uploading documents, and communicating.",
     "texhStack": [],
     "projectLink": "../waylit",
@@ -10,8 +12,10 @@ const projects = [
   {
     "id": 2,
     "image": "wwt-cover-photo.png",
+    "imageAlt": "ui components",
     "title": "World Wide Technology",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+    "dates": "May 2021 - December 2022",
+    "description": "Waylit is a digital platform that provides a central location for all parties involved in the immigration process. From task assignments, uploading documents, and communicating.",
     "projectLink": "../wwt/Wwt",
   },
 ];
