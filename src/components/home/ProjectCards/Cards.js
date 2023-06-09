@@ -5,7 +5,7 @@ import projects from '../../../static/projects';
 
 export default function ProjectCards() {
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex w-full items-center md:items-start flex-col md:flex-row">
       {
         projects.map((project) => {
           const { id, title, image, imageAlt, dates, description, projectLink } = project;

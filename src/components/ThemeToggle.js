@@ -6,7 +6,6 @@ import Brightness3Icon from "@material-ui/icons/Brightness3";
 
 const ThemeToggle = forwardRef(function ThemeToggle(props, ref) {
   const { theme, dispatch } = useContext(ThemeContext);
-  console.log('theme', theme)
   const html = useRef(document.documentElement);
 
   // Place a "watcher" here for .matchMedia()

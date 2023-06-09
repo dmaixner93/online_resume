@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function ProjectCard({ id, title, image, imageAlt, description, dates, projectLink }) {
   const imageUrl = `./images/${image}`;
   return (
-    <div className="w-80 overflow-hidden h-auto rounded-lg bg-gray-100 dark:bg-gray-800 mb-6 mr-0 lg:mb-0 lg:mr-6">
+    <div className="w-80 overflow-hidden h-auto rounded-lg bg-gray-100 dark:bg-gray-800 mb-6 mr-0 md:mb-0 md:mr-6">
       {/* Image */}
       <img
         className="card-image"
