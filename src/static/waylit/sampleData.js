@@ -7,7 +7,7 @@ const startCaseData = [
   },
   {
     id: 2,
-    candidate: "Lando Norris",
+    candidate: "Carlos Sainz",
     jobTitle: "Driver",
     type: "J-1",
   },
@@ -42,7 +42,7 @@ const taskTableData = [
     task: "Management Recommended Wage",
     comments: "",
     date: "10/30/2020",
-    assignee: "Frank Ocean"
+    assignee: "Dave Burd"
   },  
 ];
 

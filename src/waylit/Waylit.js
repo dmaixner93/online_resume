@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
 import { Container } from "@material-ui/core";
+// import Section from './';
 import NextStep from "./NextStep";
 import StartCase from "./StartCase";
 import TaskTable from "./TasksTable";
@@ -23,6 +24,7 @@ const Waylit = (props) => {
       {header}
       <Container className="mt-4">
         <Spacer height={16} />
+
         <Grid container spacing={2}>
           <Grid item xs={12} lg={8}>
             <NextStep />
