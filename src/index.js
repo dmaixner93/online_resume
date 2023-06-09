@@ -7,6 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router } from "react-router-dom";
+import ScrollToTop from './components/scrollToTop';
 
 const theme = createTheme({
   breakpoints: {
@@ -47,6 +48,7 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <StylesProvider injectFirst>
         <Router>
+          <ScrollToTop />
           <App />
         </Router>
       </StylesProvider>
